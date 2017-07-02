@@ -1,0 +1,233 @@
+/*generalna podesavanja*/
+* {
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	margin: 8px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'montserrat', sans-serif;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	opacity: 0.8;
+}
+
+/*header sa navbarom*/
+header {
+	background-color: #242424;
+	color: white;
+	padding: 20px 0px 0px;
+	text-align: center;
+}
+
+.container {
+	max-width: 1300px;
+	margin: 0px auto;
+}
+
+.logo {
+	margin-bottom: 0px;
+	font-size: 20px;
+}
+
+.titula {
+	margin: 0 0 30px 0;
+	font-size: 16px;
+}
+
+nav ul {
+	list-style: none;
+	padding: 30px 0px;
+	background-color: red;
+}
+
+nav ul li {
+	display: inline;
+}
+
+nav ul li:nth-child(2) {
+	margin: 0px 15px;
+}
+
+.selected {
+	text-decoration: underline;
+}
+
+/*sadrzaj*/
+.main-content {
+	padding: 50px 10px;
+}
+
+.projekat {
+	width: 100%;
+	max-width: 600px;
+	margin: 70px auto;
+	background-color: whitesmoke;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.projekat img {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.projekat section {
+	padding: 30px;
+}
+
+.projekat section h1 {
+	font-size: 18px;
+	margin: 0px;	
+}
+
+.projekat section a {
+	color: red;
+	text-decoration: none;
+}
+
+.projekat section p {
+	font-size: 14px;
+	color: #242424;
+}
+
+/*o meni strana*/
+.profile-img {
+	display: block;
+	max-width: 150px;
+	margin: 0 auto 50px;
+	border-radius: 50%
+}
+
+.main-content div p {
+	font-size: 16px;
+	color: grey;
+}
+
+/*kontakt strana*/
+aside {
+	display: block;
+}
+
+.kontakt-info h1 {
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+.kontakt-info {
+	margin-bottom: 70px;
+}
+
+.kontakt-detalji ul {
+	list-style: none;
+	padding: 0px;
+}
+
+.kontakt-detalji ul li {
+	padding: 10px 20px 0 0;
+}
+
+.kontakt-detalji ul a {
+	color: red;
+}
+
+.kontakt-detalji ul a:hover {
+	opacity: 0.8;
+}
+
+/*footer deo*/
+footer {
+	text-align: center;
+}
+
+footer p {
+	color: grey;
+}
+
+footer a {
+	color: #242424;
+}
+
+footer span {
+	font-size: 20px !important;
+	margin: 0 5px;
+}
+
+/*media queries*/
+@media screen and (min-width: 960px) {
+	header {
+		text-align: initial;
+		padding: 20px 20px 0px 20px;
+		border-bottom: 3px solid red;
+	}
+
+	.logo {
+		display: inline-block;
+		margin-top: 12px;
+	}
+
+	.titula {
+		display: inline-block;
+
+	}
+	
+	nav {
+		float: right;
+	}
+
+	nav ul {
+		background-color: transparent;
+		margin-top: 0px;
+		padding-top: 14px;
+	}
+
+	.projekat {
+		display: inline-block;
+		width: 32%;
+	}
+
+	.projekat h1 {
+		font-size: 25px !important;
+	}
+
+	.projekat p {
+		font-size: 16px !important;
+	}
+
+	.projekat:nth-child(3n+2) {
+		margin-left: 1.5%;
+		margin-right: 1.5%;
+	}
+
+	.profile-img {
+		margin: 0 5% 80px 0;
+		float: left;
+	}
+
+	.kontakt-info {
+		display: inline-block;
+		width: 68%;
+		margin-bottom: 70px;
+	}
+
+	.kontakt-detalji {
+		display: inline-block;
+		width: 30%;
+		padding-left: 10%;
+		vertical-align: top;
+	}
+}
